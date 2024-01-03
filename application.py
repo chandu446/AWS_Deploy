@@ -3,7 +3,7 @@ from flask import Flask,render_template,request
 import pickle
 import numpy as np
 application=Flask(__name__)
-'''@app.route('/')
+'''@application.route('/')
 def hello():
     return "Welcome to the Flask"
 
