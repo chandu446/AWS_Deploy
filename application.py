@@ -30,5 +30,5 @@ def predict():
     input_data=np.array([[Place,Area,Status,Rooms,Bathrooms,Facing,P_Type]])
     prediction=model.predict(input_data)[0]
     return render_template('index.html',prediction=prediction)
-
-application.run()
+if __name__ =="__main__":
+    application.run()
